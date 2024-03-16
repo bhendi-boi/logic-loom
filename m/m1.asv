@@ -1,0 +1,29 @@
+t = 0:0.001:2*pi;
+sn = sin(t);
+cs = cos(t);
+cscc = csc(t);
+cott = cot(t);
+tann = tan(t);
+secc = sec(t);
+
+subplot(2,3,1);
+plot(t,sn);
+title("Sine")
+subplot(2,3,2);
+plot(t,cs);
+title("Cosine")
+subplot(2,3,3);
+plot(t,tann);
+title("Tan")
+
+subplot(2,3,4);
+plot(t,cott);
+title("Cot")
+subplot(2,3,5);
+plot(t,sn);
+title("Sine")
+subplot(2,3,6);
+plot(t,sn);
+title("Sine")
+
+
