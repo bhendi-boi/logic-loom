@@ -1,0 +1,48 @@
+module evenly_divisible_by_5(
+input clk,
+output reg [3:0] div_by_5
+    );
+    
+    reg [3:0] counter = 4'd0 ;
+always @ (posedge clk)begin 
+counter  = counter + 1'b1 ;
+if (counter % 'd5 == 'd0)begin
+div_by_5 = counter ;
+ end 
+end    
+
+ 
+endmodule
+
+
+
+
+
+module fibse(
+input clk ,
+input reset,
+output [31:0] value
+    );
+
+reg [31:0] prev;
+reg [31:0] curr;
+reg [5:0] counter;
+
+always @ (posedge reset)begin 
+prev = 32'd0;
+curr= 32'd1;
+counter = 6'd1;
+end
+
+always @ (posedge clk)begin 
+counter  = counter + 1;
+curr = curr + prev;
+prev=curr-prev;
+
+
+end
+assign value = prev;
+endmodule
+
+
+
