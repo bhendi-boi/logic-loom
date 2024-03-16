@@ -1,0 +1,8 @@
+matr = load("exam_scores.mat");
+scores = matr.scores;
+averages = calculateAverage(scores);
+averages
+function [meanPerStudent, meanPerSubject] = calculateAverage(scors)
+meanPerStudent = mean(scores,2);
+meanPerSubject = mean(scores,1);
+end
