@@ -30,6 +30,6 @@ module tb_logic_loom;
       
     initial begin
 
-        $monitor("At time %d, fib0 = %d, fib1 = %d, fib2 = %d, count = %d", $time, fib0, fib1, fib2, count);
+     $monitor("At time %d, fib0 = %d, fib1 = %d, fibonacci output = %d, count = %d", $time, fib0, fib1, fib2, count);
     end
 endmodule
